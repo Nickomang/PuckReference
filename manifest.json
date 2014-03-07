@@ -1,0 +1,15 @@
+{
+    "name": "PuckReference",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description" : "Adds RotoWorld and Hockey-Reference integration into the ESPN fantasy hockey website.",
+    "icons": { 
+      "32": "img/32icon.png",
+      "64": "img/64icon.png",
+      "128": "img/128icon.png"
+    },
+    "content_scripts": [ {
+      "js": [ "js/jquery-1.9.1.min.js", "js/contentscript.js" ],
+      "matches": [ "http://games.espn.go.com/fhl/clubhouse*", "http://games.espn.go.com/fhl/freeagency*" ]
+   }]
+}
